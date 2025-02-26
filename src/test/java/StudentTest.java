@@ -30,4 +30,16 @@ class StudentTest {
         }
         assertEquals("Congratulations! You can graduate!", user.checkGraduation());
     }
+
+    @Test
+    void testSetSessions() {
+        user.setSessions(10);
+        assertEquals(10, user.getSessions());
+    }
+
+    @Test
+    void testSetTrainingMinutes() {
+        user.setTrainingMinutes(10);
+        assertEquals(10, user.getTrainingMinutes());
+    }
 }

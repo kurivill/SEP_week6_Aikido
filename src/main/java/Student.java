@@ -49,4 +49,8 @@ public class Student {
     public void setTrainingMinutes(int trainingMinutes) {
         this.trainingMinutes = trainingMinutes;
     }
+
+    public int getTrainingMinutes() {
+        return trainingMinutes;
+    }
 }
