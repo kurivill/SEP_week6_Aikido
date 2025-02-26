@@ -37,4 +37,12 @@ public class Student {
             System.out.println("Too early to graduate");
         }
     }
+
+    public void setSessions(int sessions) {
+        this.sessions = sessions;
+    }
+
+    public void setTrainingMinutes(int trainingMinutes) {
+        this.trainingMinutes = trainingMinutes;
+    }g
 }
