@@ -22,7 +22,7 @@ public class Student {
 
     public String totalTrainingTime() {
         if (trainingMinutes < 60) {
-            return "Total training time: " + trainingMinutes;
+            return "Total training time: " + trainingMinutes + " minutes";
         } else {
             int hours = trainingMinutes / 60;
             int minutes = trainingMinutes % 60;
@@ -30,16 +30,20 @@ public class Student {
         }
     }
 
-    public void checkGraduation() {
+    public String checkGraduation() {
         if (LocalDate.now().isAfter(firstSession.plusMonths(6)) || sessions >= 100) {
-            System.out.println("You can graduate");
+            return "Congratulations! You can graduate!";
         } else {
-            System.out.println("Too early to graduate");
+            return "Too early to graduate";
         }
     }
 
     public void setSessions(int sessions) {
         this.sessions = sessions;
+    }
+
+    public int getSessions() {
+        return sessions;
     }
 
     public void setTrainingMinutes(int trainingMinutes) {
