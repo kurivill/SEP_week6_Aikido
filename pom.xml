@@ -23,7 +23,7 @@
     </dependencies>
 
     <build>
-
+        <finalName>aikidotracker</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -46,7 +46,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Cal</mainClass>
+                            <mainClass>Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
