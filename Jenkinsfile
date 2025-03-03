@@ -1,11 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/kurivill/SEP_week6_Aikido.git'
-            }
-        }
+
         stage('Build') {
             steps {
                 bat 'mvn clean install'
